@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="en" data-bs-theme="light"></html>
+    <title>Ecoturismo Argentina</title>
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+<body>
+
+    <script src="./Assets/js/bootstrap.bundle.min.js"></script>
+    
+    <!--Navbar-->
+      <nav class="navbar bg-dark fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light mx-1" href="#"> <img src="./Assets/images/codoacodologo1.png" alt="Codoacodo_logo">Turismo Argentina</a>
+            
+            <button class="navbar-toggler bg-warning px-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header bg-dark">
+                    <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-dark">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-4">
+                      <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="#Mas_destinos">Mas Destinos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="#Precios">Precios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active text-light" href="#Acerca_de" aria-current="page">Nosotros</a>
+                      </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+   
+    <!-- Carroussel -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Assets/images/158835.webp" class="d-block w-100" alt="messi">
+            <div class="carousel-caption d-block d-md-block">
+              <h5 class="titulo text-end">Cataratas del Iguazú - Misiones</h5>
+              <p class="descripcion text-end">Se consideran las cascadas más grandes de Sudamérica<br>alimentadas por las aguas del río Iguazú del cual toman su nombre.<br> Sobresalen en su naturaleza porque tienen forma de arco de herradura <br> lo que les da una espectacular vista cuando se accede a ellas.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/images/salinas-grandes_01.jpg" class="d-block w-100" alt="salinas_grandes_jujuy">
+            <div class="carousel-caption d-block d-md-block">
+              <h5 class="titulo2 text-end">Salinas grandes - Jujuy</h5>
+              <p class="descripcion2 text-end">Es el tercer salar más grande de Sudamérica <br> y uno de los destinos imprescindibles para quienes visitan Jujuy.<br> Este hermoso páramo blanco se encuentra a 4.000 metros de altura <br> y tiene una extensión de 12.000 hectáreas.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/images/age-qpx-8543636_3e1c0709.jpg" class="d-block w-100" alt="Puerto_Pirámides">
+            <div class="carousel-caption d-block d-md-block">
+              <h5 class="titulo2 text-end">Puerto Pirámides - Chubut</h5>
+              <p class="descripcion3 text-end">Grandes colonias de pingüinos y leones marinos habitan bajo los acantilados blancos <br> que se alzan en este enclave del sur de Península Valdés.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/images/age-qpx-150805115_d07a097f.jpg" class="d-block w-100" alt="Villa_la_Angostura">
+            <div class="carousel-caption d-block d-md-block">
+              <h5 class="titulo2 text-end">Fitz Roy - Santa Cruz</h5>
+              <p class="descripcion3 text-end">Las excursiones a pie hasta la Laguna Torre y a la Laguna de los Tres <br> regalan panorámicas sensacionales de las esbeltas cimas de granito.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>  
+    </div>
+
+    <!--Card Group-->
+
+    <h2 class="text-center pt-5 mx-4">Conoce más de Argentina y sus paisajes</h2>
+    <div class="container">
+      <div class="row g-5 m-1 pb-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-body-tertiary">
+            <img class="card-img-top img-fluid" src="./Assets/images/Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.jpg" alt="Glaciar_Perito_Moreno">
+            <div class="card-body">
+              <h5 class="card-title mx-1">Glaciar Perito Moreno</h5>
+              <h6><span class="badge bg-info mx-1">Calafate</span><span class="badge bg-primary mx-1">Patagonia</span></h6>
+              <p class="card-text m-1">Impactante, cautivador e imponente. Los adjetivos no alcanzan para definir a este clásico de nuestro país. El glaciar es una enorme mole de hielo que se extiende desde la cordillera de los Andes hasta el lago Argentino. Está dentro del Parque Nacional Los Glaciares, Santa Cruz, y se lo puede apreciar desde una red de pasarelas, paseos en barco o kayak; incluso se puede caminar sobre su superficie.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-body-tertiary">
+            <img class="card-img-top img-fluid" src="./Assets/images/1077e6ace52c0a6bb2a8b64a79ba8d8b.webp" alt="Parque_Nacional_Talampaya">
+            <div class="card-body">
+              <h5 class="card-title mx-1">Parque Nacional Talampaya</h5>
+              <h6><span class="badge bg-danger mx-1">Desierto</span></h6>
+              <p class="card-text m-1">La erosión del viento y la lluvia durante cientos de años dio forma al cañón de Talampaya, una formación rocosa de imponentes paredes verticales. Se caracteriza por su clima árido, los colores de las piedras y las curiosas formas que los macizos rocosos han adoptado. Se lo puede recorrer con vehículos, a pie o en bicicleta, pero una de las propuestas más atractivas es visitarlo de noche, bajo la luz de la luna llena de La Rioja.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-body-tertiary">
+            <img class="card-img-top img-fluid" src="./Assets/images/huapi5.webp" alt="Parque_Nahuel_Huapi">
+            <div class="card-body">
+              <h5 class="card-title mx-1">Parque Nacional Nahuel Huapi</h5>
+              <h6><span class="badge bg-warning mx-1">Cerro</span><span class="badge bg-success mx-1">Bosques</span></h6>
+              <p class="card-text m-1">Es un paisaje icónico de la Patagonia argentina, conformado por bosques, cerros nevados y una gran cantidad de lagos, arroyos y ríos. Es el parque nacional más antiguo del país, ya que su historia se remonta a 1903, cuando el Perito Francisco Pascasio Moreno donó al Gobierno Nacional tres leguas cuadradas de tierras, ubicadas en el límite entre Neuquén y Río Negro. Sobre las márgenes del lago Nahuel Huapi se encuentran las ciudades de San Carlos de Bariloche y Villa La Angostura.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-body-tertiary">
+            <img class="card-img-top img-fluid" src="./Assets/images/age-qpx-63586091_05f6fe68.jpg" alt="Monte_Fitz_Roy">
+            <div class="card-body">
+              <h5 class="card-title mx-1">Monte Fitz Roy</h5>
+              <h6><span class="badge bg-success mx-1">Montañas</span><span class="badge bg-primary mx-1">Patagonia</span></h6>
+              <p class="card-text m-1">Este pico de 3.405 metros es el emblema de los Andes más agrestes y salvajes. Desde El Chaltén parten itinerarios que se acercan a esta maravilla natural de América del Sur y también las rutas que suben a la cumbre.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-body-tertiary">
+            <img class="card-img-top img-fluid" src="./Assets/images/estrella.jpeg" alt="Bañado_la_Estrella">
+            <div class="card-body">
+              <h5 class="card-title mx-1">Bañado La Estrella</h5>
+              <h6><span class="badge bg-danger mx-1">Reserva</span><span class="badge bg-success mx-1">Litoral</span></h6>
+              <p class="card-text m-1">Ubicado al norte de la localidad de Las Lomitas, en Formosa, es el segundo humedal más grande de la Argentina y el tercero del Cono Sur. Son 400.000 hectáreas que se encuentran inundadas buena parte del año y que albergan una gran variedad de especies y decenas de ofidios acuáticos. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-body-tertiary">
+            <img class="card-img-top img-fluid" src="./Assets/images/Valle-de-la-Luna.jpg" alt="Valle_de_la_Luna">
+            <div class="card-body">
+              <h5 class="card-title mx-1">Valle de la Luna</h5>
+              <h6><span class="badge bg-warning mx-1">Ischigualasto</span><span class="badge bg-primary mx-1">San Juan</span></h6>
+              <p class="card-text m-1">Es un paisaje desértico muy similar a la superficie lunar, posee formaciones rocosas muy sorprendentes en el Valle Pintado y en la Cancha de Bochas. En el museo de este parque se encuentran exhibidos fósiles de dinosaurios del período Triásico.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Card horizontal-->
+    <h3 id="Mas_destinos" class="text-md-start mb-4 mx-5 py-3">Mejores Paisajes de Argentina para visitar</h3>
+    <div class="card_horizontal pb-5">
+      <div class="card mb-4 mx-5">
+        <div class="row g-0">
+          <div class="col-md-3">
+            <img src="./Assets/images/gettyimages-534337288_ab9ea911.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">La Patagonia</h5>
+              <p class="card-text">La Patagonia está repleta de haciendas ganaderas, denominadas "estancias", que en los últimos años se han transformado en confortables alojamientos rurales. Emplazadas en enclaves de gran belleza, en medio de praderas con los Andes como telón de fondo y alejadas de las poblaciones, ofrecen mucho más que dormir bajo el cielo de la Patagonia. Las rutas a caballo, a pie y en vehículo todoterreno permiten explorar los alrededores, alcanzar lagos, contemplar ríos que bajan caudalosos de las montañas e incluso visitar abrigos rupestres. También resulta emocionante presenciar actividades propias del día a día de las fincas ganaderas, como la esquila, la yerra y la doma.<br>El apartado gastronómico constituye la otra gran baza de las haciendas patagónicas. De sus fogones salen delicias gastronómicas a base de carne de primerísima calidad, que van acompañadas de vinos de la región. Compartir la tradicional infusión de mate es un gesto de cortesía entre anfitriones y visitantes. La mayoría de las estancias deben su origen a los inmigrantes europeos que llegaron a finales del siglo XIX y principios del XX. Algunas se convirtieron en pequeños pueblos, con establos, viviendas para peones, escuela e incluso enfermería. En muchas la mansión del dueño o hacendado aún conserva el aire de lujo de antaño.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 mx-5">
+        <div class="row g-0">
+          <div class="col-md-3">
+            <img src="./Assets/images/h44-10820041_796f8779.jpg" class="img-fluid rounded-start" alt="Cueva_de_las_manos">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Cueva de las Manos</h5>
+              <p class="card-text">La Patagonia fue el hogar de uno de los grupos humanos más antiguos de América del Sur. Así lo revelan las pinturas rupestres halladas en las cuevas y farallones del Cañadón del Río Pinturas, en la provincia de Santa Cruz, a seis horas en coche del glaciar Perito Moreno. El sitio arqueológico Cueva de las Manos alberga el conjunto de pinturas más destacado, con 600 metros cubiertos de representaciones de animales, escenas de caza, negativos de manos y figuras abstractas. En 1941, el sacerdote Alberto M. de Agostini fue el primer hombre blanco en ver las pinturas, un momento que recogió en su libro Los Andes (1950) junto a descripciones y cuatro fotografías. En la Cuenca del Río Pinturas se localizan otros enclaves arqueológicos que ponen de manifiesto la presencia en la zona de una comunidad de cazadores recolectores hace 9.300 años.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 mx-5">
+        <div class="row g-0">
+          <div class="col-md-3">
+            <img src="./Assets/images/Cuevas-de-Acsibi-Salta.jpg" class="img-fluid rounded-start" alt="Cuevas_de_Acsibi">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Cuevas de Acsibi</h5>
+              <p class="card-text">Aunque es cierto que conocemos muchos de los lugares más visitados de Argentina, de seguro hay otros paisajes que pasan desapercibidos, pero jamás olvidados, uno de ellos son las cuevas que se alzan en Salta, las cuales representan una parte muy cultural e histórica para todo el mundo.<br>Se tratan de unas formaciones naturales poco conocidas que se hallan al final de un largo camino atravesando el lecho de un río. Este Valle de las Cuevas es conocido como un sitio de gran interés turístico e histórico, pues ha sido sometido a un sinfín de expediciones y exploraciones con el fin de recopilar más información del mismo.<br>Los juegos de matices que podremos contemplar junto con las sombras hacen de esta experiencia algo inolvidable. Se considera un lugar sagrado, pues allí yacio un pueblo del pasado argentino los cuales usaron dichas cuevas para rituales.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 mx-5">
+        <div class="row g-0">
+          <div class="col-md-3">
+            <img src="./Assets/images/Serranías-de-Hornocal-Jujuy.jpg" class="img-fluid rounded-start" alt="Sierras_Hornocal_Jujuy">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Serranías de Hornocal</h5>
+              <p class="card-text">Muchas historias se alzan en lo que se conoce con estas serranías, pues las mismas cuentan que algunos han llegado a tener por lo menos los 33 colores que el mismo puede reflejar, pero, modestamente estas serranías también se presentan a los lugareños como “el cerro de los 14 colores”.<br>Este cerro se halla muy cerca de un pueblo de Humahuaca, y se presenta junto con un cañadón que se encuentra cerca de la Quebrada de Humahuaca. <br>Algunos de los residentes y turistas se quedan admirando los colores que puede llegar a reflejar esta loma, yendo desde el verde hasta incluso tonos anaranjados, los cuales pueden sufrir cambios cuando el clima se torna diferente. <br>Estas serranías son un verdadero espectáculo y belleza en cuanto a paisajismo que cualquier otro podría reflejar, es por ello que todos los que se pasan por la quebrada, terminan conociendo estas serranías.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 mx-5">
+        <div class="row g-0">
+          <div class="col-md-3">
+            <img src="./Assets/images/Trevelin.jpg" class="img-fluid rounded-start" alt="Trevelin_Chubut">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Trevelin</h5>
+              <p class="card-text">Trevelin es una localidad de Argentina que se encuentra en la región de la Patagonia, perteneciente al departamento Futaleufú de la provincia de Chubut. Es un pintoresco pueblo que goza de hermosos paisajes cordilleranos, la belleza del lugar se debe a sus bosques milenarios de cipreses y coihues, las flores, las frambuesas, las frutillas y cerezas que son cultivadas artesanamente. <br>Además de todo lo anterior, el lugar cuenta con truchas propias de sus arroyos y con las cervezas caseras que elaboran los lugareños. Es el lugar correcto para estar en contacto con la naturaleza, desconectarte de las preocupaciones y disfrutar de uno de los mejores paisajes de Argentina.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 mx-5">
+        <div class="row g-0">
+          <div class="col-md-3">
+            <img src="./Assets/images/IMG_4163-copia-700x394.jpg" class="img-fluid rounded-start" alt="Selva_Misionera">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Selva Misionera</h5>
+              <p class="card-text">Valles, ríos, frondosa vegetación subtropical y hasta sierras, que llegan a los 800 m de altura, dan forma a un bosque lluvioso y húmedo que ocupa más de un 35% del territorio misionero. Es una de las eco-regiones más biodiversas del planeta y también una de las áreas naturales más amenazadas del mundo debido a los continuos desmontes. Hogar del yaguareté y del tatú-carreta, en su espacio conviven más de 400 especies de aves que inundan el follaje de árboles gigantes.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Lista Precios-->
+
+    <div class="container text-center py-5">
+      <h2 id="Precios" class="display-6">Precios</h2>
+      <p class="lead">Disfruta de estas ofertas que tenemos preparado para vos!</p>
+    </div>
+
+    <div class="container-price text-center mx-5">
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col mb-4">
+          <h3>Misiones</h3>
+          <div class="card shadow-sm">
+            <div class="card-header">
+              <h4>3 dias</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="my-0 font-weight-normal">$15.000 <small class="text-muted">/pers.</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Desayuno y cena incluido</li>
+                <li>Hotel 3 estrellas</li>
+                <li>Cataratas del Iguazú</li>
+                <li>Visita a las Ruinas de San Ignacio</li>
+                <li>Excursión por la Selva Misionera</li>
+                <li>Recorrido de varios Saltos y cascadas</li>
+              </ul>
+              <button class="btn btn-outline-primary btn-lg btn-block">Ver mas</button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <h3>Chubut</h3>
+          <div class="card shadow-sm">
+            <div class="card-header">
+              <h4>7 dias</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="my-0 font-weight-normal">$25.000 <small class="text-muted">/pers.</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Desayuno y Cena incluidos</li>
+                <li>Hotel de 4 estrellas</li>
+                <li>Gastronomia de excelencia</li>
+                <li>Visita a Puerto Madryn</li>
+                <li>Puerto Pirámides</li>
+                <li>Siete lagos y salidas en Canoa</li>
+              </ul>
+              <button class="btn btn-outline-primary btn-lg btn-block">Ver mas</button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <h3>Patagonia</h3>
+          <div class="card shadow-sm">
+            <div class="card-header">
+              <h4>14 dias</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="my-0 font-weight-normal">$45.000 <small class="text-muted">/pers.</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Desayuno y cena incluidos</li>
+                <li>Hotel de 5 estrellas</li>
+                <li>Gastronomia de excelencia</li>
+                <li>Cata de vinos</li>
+                <li>Excursion al Monte Fitz Roy</li>
+                <li>Visita al Glaciar Perito moreno</li>
+              </ul>
+              <button class="btn btn-outline-primary btn-lg btn-block">Ver mas</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Formulario-->
+
+    <section class="col-10 col-lg-5 bg-body-tertiary border border-dark mx-auto my-5 py-3 rounded-5">
+      <h3 class="text-center text-uppercase  py-5">Dejános tu Mensaje</h3>
+      <div class="mb-3 mx-4">
+        <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control border border-dark" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3 mx-4">
+        <label for="exampleFormControlTextarea1" class="form-label">Escribe aquí</label>
+        <textarea class="form-control border border-dark" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="px-5">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-success">Limpiar</button>
+      </div>
+    </section>
+    
+  <!--Footer-->
+
+  <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="container text-center text-md-start d-flex">
+      <div class="row text-center text-md-start">
+        <div id="Acerca_de" class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-primary">¿Quiénes somos?</h5>
+          <hr class="mb-3">
+          <p>Somos una empresa dedica al turismo dentro del territorio Argentino con 25 años de experiencia y trayectoria en el rubro. Ofreciendote las mejores ofertas y servicios que puedas encontrar para que disfrutes de unas buenas vacaciones. </p>
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contacto</h5>
+          <hr class="mb-4">
+          <p>
+            <li class="fas fa-home me-3"></li>Argentina, Buenos Aires
+          </p>
+          <p>
+            <li class="fas fa-envelope me-3"></li> viajerosargentinos22@gmail.com
+          </p>
+          <p>
+            <li class="fas fa-phone me-3"></li> +54 011 32354564
+          </p>
+          <p>
+            <li class="fas fa-print me-3"></li> +54 011 32354564
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Redes</h5>
+          <hr class="mb-4">
+          <p>
+            <li class="fa-brands fa-twitter me-3"></li> turismoargentina@twitter.com
+          </p>
+          <p>
+            <li class="fa-brands fa-facebook me-3"></li>turismoargentino@facebook.com
+          </p>
+          <p>
+            <li class="fa-brands fa-instagram me-3"></li>@turismoargentino24
+          </p>
+          <p>
+            <li class="fa-brands fa-linkedin me-3"></li>@tudestino.com
+          </p>
+        </div>
+
+        <hr class="mb-4">
+        <div class="text-center mb-2">
+          <p>Copyright Todos los derechos están reservados <a href="#"><strong class="text-primary">@test</strong></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>    
+</body>
+</html>

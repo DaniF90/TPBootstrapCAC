@@ -1,0 +1,45 @@
+* {
+    font-family: "Poppins",sans-serif;
+}
+
+.carousel .carousel-inner .carousel-item img {
+    width: 90vw;
+    height: 75vh;
+    min-height: 500px;
+    min-width: 200px;
+    background: no-repeat center scroll;
+}
+
+.carousel .carousel-inner .carousel-item h5 {
+    font-size: 18px;
+}
+
+.carousel .carousel-inner .carousel-item p {
+    font-size: 12px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.card .card-body h5 {
+    font-size: 18px;
+}
+
+.card .card-body h6 {
+    font-size: 14px;
+}
+
+.card .card-body p {
+    font-size: 12px;
+
+}
+
+
+.card_horizontal img {
+    height: 100%;
+    object-fit: cover;
+    
+}
